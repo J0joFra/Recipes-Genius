@@ -1,6 +1,7 @@
 {
   "name": "recipe-genius",
   "version": "1.0.0",
+  "type": "module",
   "description": "AI-powered recipe generator from ingredients",
   "main": "index.js",
   "scripts": {
