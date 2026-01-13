@@ -15,8 +15,16 @@ export default function RecipeModal({ recipe, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Hero Section */}
-        <div className="relative h-64 bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center">
-          <ChefHat className="h-24 w-24 text-orange-300" />
+        <div className="relative h-64 bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center overflow-hidden">
+          {recipe.image_url ? (
+            <img 
+              src={recipe.image_url} 
+              alt={recipe.name}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <ChefHat className="h-24 w-24 text-orange-300" />
+          )}
           <button
             onClick={onClose}
             className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors"
