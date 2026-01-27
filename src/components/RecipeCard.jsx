@@ -8,10 +8,10 @@ export default function RecipeCard({ recipe, onClick, index }) {
       onClick={onClick}
       className="group cursor-pointer"
     >
-      <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-orange-200">
+      <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-alabaster-grey hover:border-prussian-blue">
         {/* Image Placeholder */}
-        <div className="relative h-52 bg-gradient-to-br from-orange-50 to-orange-100 flex items-center justify-center">
-          <ChefHat className="h-16 w-16 text-orange-300" />
+        <div className="relative h-52 bg-gradient-to-br from-alabaster-grey to-dusty-denim flex items-center justify-center">
+          <ChefHat className="h-16 w-16 text-prussian-blue" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           
           {/* Difficulty Badge */}
@@ -24,15 +24,15 @@ export default function RecipeCard({ recipe, onClick, index }) {
 
         {/* Content */}
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-orange-600 transition-colors">
+          <h3 className="text-xl font-semibold text-ink-black mb-2 group-hover:text-prussian-blue transition-colors">
             {recipe.name}
           </h3>
-          <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+          <p className="text-dusty-denim text-sm mb-4 line-clamp-2">
             {recipe.description}
           </p>
 
           {/* Info Row */}
-          <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
+          <div className="flex items-center gap-4 text-xs text-dusty-denim mb-4">
             <div className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" />
               <span>{recipe.cooking_time}</span>

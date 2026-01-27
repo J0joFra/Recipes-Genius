@@ -28,11 +28,11 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-orange-50">
+    <div className="min-h-screen bg-gradient-to-b from-alabaster-grey via-white to-alabaster-grey">
       {/* Decorative Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-200/20 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-dusk-blue/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-prussian-blue/20 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 px-4 py-12 md:py-20 max-w-7xl mx-auto">

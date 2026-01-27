@@ -25,8 +25,8 @@ export default function IngredientInput({ ingredients, setIngredients, onGenerat
 
   return (
     <div className="w-full max-w-2xl mx-auto mb-16">
-      <div className="bg-white rounded-3xl shadow-xl shadow-gray-100/50 p-8 border border-gray-100">
-        <label className="block text-sm font-semibold text-gray-700 mb-4">
+      <div className="bg-white rounded-3xl shadow-xl shadow-alabaster-grey/50 p-8 border border-alabaster-grey">
+        <label className="block text-sm font-semibold text-dusty-denim mb-4">
           I tuoi ingredienti
         </label>
         
@@ -37,11 +37,11 @@ export default function IngredientInput({ ingredients, setIngredients, onGenerat
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Es: pomodori, mozzarella, basilico..."
-            className="flex-1 px-4 py-3 rounded-xl border border-gray-200 focus:border-orange-400 focus:ring-2 focus:ring-orange-100 outline-none transition-all"
+            className="flex-1 px-4 py-3 rounded-xl border border-dusty-denim focus:border-prussian-blue focus:ring-2 focus:ring-prussian-blue/20 outline-none transition-all"
           />
           <button
             onClick={addIngredient}
-            className="px-6 py-3 bg-orange-500 text-white rounded-xl hover:bg-orange-600 transition-colors flex items-center gap-2"
+            className="px-6 py-3 bg-prussian-blue text-white rounded-xl hover:bg-dusk-blue transition-colors flex items-center gap-2"
           >
             <Plus className="h-4 w-4" />
             Aggiungi
@@ -53,12 +53,12 @@ export default function IngredientInput({ ingredients, setIngredients, onGenerat
             {ingredients.map((ingredient, index) => (
               <span
                 key={index}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-orange-50 text-orange-700 rounded-full text-sm font-medium"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-alabaster-grey text-prussian-blue rounded-full text-sm font-medium"
               >
                 {ingredient}
                 <button
                   onClick={() => removeIngredient(ingredient)}
-                  className="hover:bg-orange-100 rounded-full p-0.5 transition-colors"
+                  className="hover:bg-dusty-denim rounded-full p-0.5 transition-colors"
                 >
                   <X className="h-3 w-3" />
                 </button>
@@ -70,7 +70,7 @@ export default function IngredientInput({ ingredients, setIngredients, onGenerat
         <button
           onClick={onGenerateRecipes}
           disabled={ingredients.length === 0 || isGenerating}
-          className="w-full py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 shadow-lg shadow-orange-200/50"
+          className="w-full py-4 bg-gradient-to-r from-prussian-blue to-dusk-blue text-white rounded-xl font-semibold hover:from-dusk-blue hover:to-prussian-blue disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2 shadow-lg shadow-prussian-blue/50"
         >
           {isGenerating ? (
             <>
