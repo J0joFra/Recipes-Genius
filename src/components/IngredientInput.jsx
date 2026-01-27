@@ -90,8 +90,8 @@ const useAutoTranslateIngredients = (ingredients) => {
     // Rate limiting: aspetta almeno 100ms tra le traduzioni
     const now = Date.now();
     const timeSinceLast = now - lastTranslationTime;
-    if (timeSinceLast < 100) {
-      await new Promise(resolve => setTimeout(resolve, 100 - timeSinceLast));
+    if (timeSinceLast < 500) {
+      await new Promise(resolve => setTimeout(resolve, 500 - timeSinceLast));
     }
 
     setIsTranslating(true);
