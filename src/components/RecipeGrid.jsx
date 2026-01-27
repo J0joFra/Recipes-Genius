@@ -10,11 +10,11 @@ export default function RecipeGrid({ recipes, onRecipeClick }) {
   return (
     <div className="w-full max-w-6xl mx-auto">
       <div className="text-center mb-10">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-alabaster-grey rounded-full text-prussian-blue text-sm mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-vanilla-cream rounded-full text-hunter-green text-sm mb-4">
           <Sparkles className="h-4 w-4" />
           Ricette Generate dall'AI
         </div>
-        <h2 className="text-3xl md:text-4xl font-light text-ink-black">
+        <h2 className="text-3xl md:text-4xl font-light text-hunter-green">
           Ecco cosa puoi preparare
         </h2>
       </div>

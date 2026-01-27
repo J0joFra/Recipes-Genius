@@ -15,7 +15,7 @@ export default function RecipeModal({ recipe, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Hero Section */}
-        <div className="relative h-64 bg-gradient-to-br from-alabaster-grey to-dusty-denim flex items-center justify-center overflow-hidden">
+        <div className="relative h-64 bg-gradient-to-br from-vanilla-cream to-sage-green flex items-center justify-center overflow-hidden">
           {recipe.image_url ? (
             <img 
               src={recipe.image_url} 
@@ -23,21 +23,21 @@ export default function RecipeModal({ recipe, onClose }) {
               className="w-full h-full object-cover"
             />
           ) : (
-            <ChefHat className="h-24 w-24 text-prussian-blue" />
+            <ChefHat className="h-24 w-24 text-hunter-green" />
           )}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-lg hover:bg-alabaster-grey transition-colors"
+            className="absolute top-4 right-4 p-2 bg-white rounded-full shadow-lg hover:bg-vanilla-cream transition-colors"
           >
-            <X className="h-5 w-5 text-dusty-denim" />
+            <X className="h-5 w-5 text-sage-green" />
           </button>
         </div>
 
         <div className="p-8">
           {/* Header */}
           <div className="mb-6">
-            <h2 className="text-3xl font-bold text-ink-black mb-3">{recipe.name}</h2>
-            <p className="text-dusty-denim mb-4">{recipe.description}</p>
+            <h2 className="text-3xl font-bold text-hunter-green mb-3">{recipe.name}</h2>
+            <p className="text-sage-green mb-4">{recipe.description}</p>
             
             {/* Info Pills */}
             <div className="flex flex-wrap gap-3 mb-4">
@@ -61,15 +61,15 @@ export default function RecipeModal({ recipe, onClose }) {
 
           {/* Ingredients */}
           <div className="mb-8">
-            <h3 className="text-xl font-semibold text-ink-black mb-4 flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-prussian-blue" />
+            <h3 className="text-xl font-semibold text-hunter-green mb-4 flex items-center gap-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-hunter-green" />
               Ingredienti
             </h3>
-            <div className="bg-alabaster-grey rounded-2xl p-6">
+            <div className="bg-vanilla-cream rounded-2xl p-6">
               <ul className="space-y-2">
                 {recipe.ingredients.map((ingredient, idx) => (
-                  <li key={idx} className="flex items-center gap-3 text-dusty-denim">
-                    <Check className="h-4 w-4 text-prussian-blue flex-shrink-0" />
+                  <li key={idx} className="flex items-center gap-3 text-sage-green">
+                    <Check className="h-4 w-4 text-hunter-green flex-shrink-0" />
                     <span>{ingredient}</span>
                   </li>
                 ))}
@@ -79,29 +79,29 @@ export default function RecipeModal({ recipe, onClose }) {
 
           {/* Instructions */}
           <div className="mb-8">
-            <h3 className="text-xl font-semibold text-ink-black mb-4 flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-prussian-blue" />
+            <h3 className="text-xl font-semibold text-hunter-green mb-4 flex items-center gap-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-hunter-green" />
               Istruzioni
             </h3>
             <ol className="space-y-4">
               {recipe.instructions.map((instruction, idx) => (
                 <li key={idx} className="flex gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-prussian-blue text-white flex items-center justify-center text-sm font-semibold">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-hunter-green text-white flex items-center justify-center text-sm font-semibold">
                     {idx + 1}
                   </span>
-                  <p className="text-dusty-denim pt-1">{instruction}</p>
+                  <p className="text-sage-green pt-1">{instruction}</p>
                 </li>
               ))}
             </ol>
           </div>
 
           {/* Chef's Tip */}
-          <div className="bg-gradient-to-br from-alabaster-grey to-dusty-denim rounded-2xl p-6 border-2 border-dusty-denim">
+          <div className="bg-gradient-to-br from-vanilla-cream to-sage-green rounded-2xl p-6 border-2 border-sage-green">
             <div className="flex items-start gap-3">
-              <ChefHat className="h-6 w-6 text-prussian-blue flex-shrink-0 mt-1" />
+              <ChefHat className="h-6 w-6 text-hunter-green flex-shrink-0 mt-1" />
               <div>
-                <h4 className="font-semibold text-ink-black mb-2">Consiglio dello Chef</h4>
-                <p className="text-dusty-denim">{recipe.tips}</p>
+                <h4 className="font-semibold text-hunter-green mb-2">Consiglio dello Chef</h4>
+                <p className="text-sage-green">{recipe.tips}</p>
               </div>
             </div>
           </div>

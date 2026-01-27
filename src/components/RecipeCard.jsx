@@ -8,10 +8,10 @@ export default function RecipeCard({ recipe, onClick, index }) {
       onClick={onClick}
       className="group cursor-pointer"
     >
-      <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-alabaster-grey hover:border-prussian-blue">
+      <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-vanilla-cream hover:border-hunter-green">
         {/* Image Placeholder */}
-        <div className="relative h-52 bg-gradient-to-br from-alabaster-grey to-dusty-denim flex items-center justify-center">
-          <ChefHat className="h-16 w-16 text-prussian-blue" />
+        <div className="relative h-52 bg-gradient-to-br from-vanilla-cream to-sage-green flex items-center justify-center">
+          <ChefHat className="h-16 w-16 text-hunter-green" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           
           {/* Difficulty Badge */}
@@ -24,15 +24,15 @@ export default function RecipeCard({ recipe, onClick, index }) {
 
         {/* Content */}
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-ink-black mb-2 group-hover:text-prussian-blue transition-colors">
+          <h3 className="text-xl font-semibold text-hunter-green mb-2 group-hover:text-hunter-green transition-colors">
             {recipe.name}
           </h3>
-          <p className="text-dusty-denim text-sm mb-4 line-clamp-2">
+          <p className="text-sage-green text-sm mb-4 line-clamp-2">
             {recipe.description}
           </p>
 
           {/* Info Row */}
-          <div className="flex items-center gap-4 text-xs text-dusty-denim mb-4">
+          <div className="flex items-center gap-4 text-xs text-sage-green mb-4">
             <div className="flex items-center gap-1">
               <Clock className="h-3.5 w-3.5" />
               <span>{recipe.cooking_time}</span>

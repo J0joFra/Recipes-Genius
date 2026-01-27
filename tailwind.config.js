@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'ink-black': 'var(--ink-black)',
-        'prussian-blue': 'var(--prussian-blue)',
-        'dusk-blue': 'var(--dusk-blue)',
-        'dusty-denim': 'var(--dusty-denim)',
-        'alabaster-grey': 'var(--alabaster-grey)',
+        'hunter-green': 'var(--hunter-green)',
+        'sage-green': 'var(--sage-green)',
+        'yellow-green': 'var(--yellow-green)',
+        'vanilla-cream': 'var(--vanilla-cream)',
+        'blushed-brick': 'var(--blushed-brick)',
       },
     },
   },
